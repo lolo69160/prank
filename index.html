@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Je t'ai eu !</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+    }
+    .message {
+      color: #0f0;
+      font-size: 8vw;
+      font-weight: bold;
+      text-shadow:
+        0 0 5px #0f0,
+        0 0 10px #0f0,
+        0 0 20px #0f0,
+        0 0 40px #0f0;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75%     { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">JE T'AI EU !</div>
+</body>
+</html>
